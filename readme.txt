@@ -3,7 +3,7 @@ Contributors: philipjohn
 Donate link: http://philipjohn.co.uk/
 Tags: shortlink, shorturl, tinyurl
 Requires at least: 3.2.1
-Tested up to: 3.3
+Tested up to: 3.5.1
 Stable tag: trunk
 
 Adds a link to the shortlink for each post below the content.
