@@ -4,7 +4,7 @@ Donate link: http://philipjohn.co.uk/
 Tags: shortlink, shorturl, tinyurl
 Requires at least: 3.2.1
 Tested up to: 3.9
-Stable tag: trunk
+Stable tag: 0.3.2
 
 Adds a link to the shortlink for each post below the content.
 
