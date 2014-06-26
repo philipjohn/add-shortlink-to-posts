@@ -18,8 +18,13 @@ load_plugin_textdomain('astp');
  * Adds the shortlink on the end of posts
  */
 function astp_add_shortlink($content){
+
+	// Don't add shortlink to excerpts
+	if ( ! is_single() )
+		return $content;
+
 	$shortlink = wp_get_shortlink();
-	$shortlink = (!empty($shortlink) ? $shortlink : get_permalink());
+	$shortlink = ( ! empty( $shortlink ) ? $shortlink : get_permalink() );
     $content = $content.'<p class="the_shortlink">'.__("Shortlink for this post:", 'astp').' <a rel="shortlink" href="'.$shortlink.'" title="'.get_the_title().'">'.$shortlink.'</p>';
     return $content;
 }
