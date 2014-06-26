@@ -3,8 +3,8 @@ Contributors: philipjohn
 Donate link: http://philipjohn.co.uk/
 Tags: shortlink, shorturl, tinyurl
 Requires at least: 3.2.1
-Tested up to: 3.9
-Stable tag: 0.3.2
+Tested up to: 3.9.1
+Stable tag: 0.3.3
 
 Adds a link to the shortlink for each post below the content.
 
@@ -42,3 +42,8 @@ That's the default shortlink format provided by WordPress. You might want to tak
 
 = 0.3.1 =
 * Fix for title appearing again at the beginning of post content
+
+= 0.3.3 =
+* Stop appearing on excerpts
+* Code tidy up
+* Better HTML generation

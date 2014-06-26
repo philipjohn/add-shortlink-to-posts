@@ -3,7 +3,7 @@
 Plugin Name: Add Shortlink to Posts
 Plugin URI: http://philipjohn.co.uk
 Description: Adds a link to the shortlink for each post below the content.
-Version: 0.3.2
+Version: 0.3.3
 Author: Philip John
 Author URI: http://philipjohn.co.uk
 License: GPL2
