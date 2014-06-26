@@ -23,11 +23,23 @@ function astp_add_shortlink($content){
 	if ( ! is_single() )
 		return $content;
 
+	// Generate the shortlink
 	$shortlink = wp_get_shortlink();
 	$shortlink = ( ! empty( $shortlink ) ? $shortlink : get_permalink() );
-    $content = $content.'<p class="the_shortlink">'.__("Shortlink for this post:", 'astp').' <a rel="shortlink" href="'.$shortlink.'" title="'.get_the_title().'">'.$shortlink.'</p>';
-    return $content;
+
+	// Generate the html
+    $html = sprintf(
+		'<p class="the_shortlink">%s <a rel="shortlink" href="%s" title="%s">%s</p>',
+		__("Shortlink for this post:", 'astp'),
+		$shortlink,
+		get_the_title(),
+		$shortlink
+	);
+
+	// Add to the content
+    return $content . $html;
+
 }
-add_filter( "the_content", "astp_add_shortlink", 11);
+add_filter( "the_content", "astp_add_shortlink", 11 );
 
 ?>
