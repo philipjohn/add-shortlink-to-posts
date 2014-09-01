@@ -5,3 +5,6 @@
 
 # SVN
 *.svn
+
+# This is where we store the WP.org version of the plugin
+svn
